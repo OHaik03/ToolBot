@@ -8,7 +8,6 @@ Consumer_Key = '341KcUxlUT3yOuNHX6AV6aeUM'
 ConsumerKey_Secret = 'Qted2laW3FqgHKhfg02ZvfGuy5cVhPa1UIfRFIeXeNlv1XdEYQ'
 Client = 'd29WNzE4WWpESkhzb0pxSTdxdkE6MTpjaQ'
 Client_Secret = 'n6A-8ykKJpL9ySXweSwa128xYx9MXGl-7OBoaKAnlPeqGIZ_jj'
-#Bearertoken = 'AAAAAAAAAAAAAAAAAAAAAPQjvQEAAAAAPVwgIm6%2FBkm4LF%2BT%2F%2BKgoINvZL4%3D3no3CsQIljfgq52jdkpXJu36DMDdEsW7ait1BzTMyfykHZedS8'
 Access_Token = '1822076500742696963-cuNmM72NYVzF3kzXLLmT2D9JQhJJJH'
 AccessT_Secret = 'zgwhEM0NvOACKjHz7SE4zWgoK3TALzRBBu8D3cueJ6gY1'
 
@@ -25,20 +24,12 @@ def create_api():
     
     return client  # Return the client object, not Client string
 
-
-#auth = tweepy.OAuth2UserHandler(client_id= Client, client_secret= Client_Secret)
-#auth.set_access_token(Access_Token, AccessT_Secret)
-
 def getMessage():
     
     while True:
-        try:
-        
-            with open("/Users/haik/Desktop/Python Projects/LyricsTool.txt", "r") as sample:
-                #message = linecache.getLine(sample, random.randint(0,492))
-                #message = sample.read(content[random.randint(0,492)])
-                randomInt = random.randint(0, 492)  
-                message = linecache.getline("/Users/haik/Desktop/Python Projects/LyricsTool.txt", randomInt)
+        try:    #
+            randomInt = random.randint(0, 492)  
+            message = linecache.getline("/Users/haik/Desktop/Python Projects/LyricsTool.txt", randomInt)
     
             if not message:
                 message = "testing"    
