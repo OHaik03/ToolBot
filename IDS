@@ -1,0 +1,8 @@
+Access_Token = 'Access Token'
+AccessT_Secret = 'Access Token Secret'
+
+Consumer_Key = 'Consumer Key'
+ConsumerKey_Secret = 'Consumer Key Secret'
+
+API_KEY = 'API Key'
+API_KEY_SECRET = 'API Key Secret'
